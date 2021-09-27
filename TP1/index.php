@@ -58,7 +58,8 @@ $mails = array(
     "Lareina.Underwood@outlook.com",
     "Wynne.Schmidt@outlook.com",
     "Tanek.Harrison@outlook.com",
-    "Xyla.Aguilar@outlook.com"
+    "Xyla.Aguilar@outlook.com",
+    "pauline@srifi.fr"
 );
 
 $dns = array();
@@ -70,12 +71,6 @@ echo 'exo 1 & 3 <br />';
 foreach($iTab as $value) {
     print_r($value);
     echo '<br />';
-/*
-    foreach($subtab as $value) {
-    print_r($value);
-            echo '<br />';
-    }
-*/
 }
 echo '<br/>';
 
@@ -83,12 +78,6 @@ echo 'exo 2 & 3 <br />';
 foreach($aTab as $value) {
     print_r($value);
     echo '<br />';
-/*
-    foreach($subtab as $value) {
-    print_r($value);
-            echo '<br />';
-    }
-*/
 }
 echo '<br/>';
 
@@ -104,16 +93,30 @@ foreach($mails as $var) {
     array_push($dns, $pointer);
 }
 
-foreach($dns as $dns_mails) {
-    if($mn != $dns_mails) {
-        $mn = $dns_mails;
+$mn = "";
+for($i = 0; $i < sizeof($dns); ++$i) {
+    if(!($mn == $dns[$i])) {
+        $mn = $dns[$i];
+        array_push($dnsTable, $dns[$i]);
     }
-    for($i = 0; $i < sizeof($dnsTable); ++$i) {
-        if($dnsTable[$i] == $mn) {
-            $dnsTable[$i]++;
+    
+}
+
+for($j = 0; $j < sizeof($dnsTable); ++$j) {
+    array_push($stats, 0);
+}
+
+
+for($i = 0; $i < sizeof($dns); ++$i) {
+    for($j = 0; $j < sizeof($dnsTable); ++$j) {
+        if($dnsTable[$j] == $dns[$i]) {
+            $stats[$j]++;
         }
     }
 }
 
-print_r($stats);
+for ($i=0; $i < sizeof($stats); ++$i) { 
+    echo "Le nom de domaine " .$dnsTable[$i] ." a été utilisé " .$stats[$i] ." fois." .'<br />';
+}
+
 
