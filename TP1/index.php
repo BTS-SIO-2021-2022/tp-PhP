@@ -118,5 +118,54 @@ for($i = 0; $i < sizeof($dns); ++$i) {
 for ($i=0; $i < sizeof($stats); ++$i) { 
     echo "Le nom de domaine " .$dnsTable[$i] ." a été utilisé " .$stats[$i] ." fois." .'<br />';
 }
+echo '<br/>';
+
+echo 'exo 5 <br />';
+$tabInt = array();
+$tabDec = array();
+$tabSin = array();
+
+for($i = 1; $i < 64; ++$i) {
+    array_push($tabInt, $i);
+}
+
+for($i = 0; $i < sizeof($tabInt); ++$i) {
+    array_push($tabDec, ($tabInt[$i]/10));
+}
+
+for($i = 0; $i < sizeof($tabInt); ++$i) {
+    array_push($tabSin, sin(deg2rad($tabInt[$i])));
+}
+
+?>
+
+<html>
+    <head>
+        <link href="./style.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <table>
+            <tr>
+                <th>X</th>
+                <th>X/10</th>
+                <th>sin(X)</th>
+            </tr>
+            <?php 
+                for($i = 0; $i < sizeof($tabInt); ++$i) {
+                    echo '<tr>';
+                        echo "<td style='tabText'>$tabInt[$i]</td>";
+                        echo "<td style='tabText'>$tabDec[$i]</td>";
+                        echo "<td style='tabText'>$tabSin[$i]</td>";
+                    echo '</tr>';
+                }
+            ?>
+        </table>
+    </body>
+</html>
+
+
+
+
+
 
 
