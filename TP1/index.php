@@ -49,11 +49,11 @@ $aTab = array(
 );
 
 $mails = array(
-	"Acton.Brown@gmail.com",
-	"Owen.Cole@gmail.com",
-	"Holly.Hurley@gmail.com",
-	"Noel.Burns@yahoo.fr",
-	"Paki.Sharpe@yahoo.fr",
+    "Acton.Brown@gmail.com",
+    "Owen.Cole@gmail.com",
+    "Holly.Hurley@gmail.com",
+    "Noel.Burns@yahoo.fr",
+    "Paki.Sharpe@yahoo.fr",
     "Seth.Shepard@yahoo.fr",
     "Lareina.Underwood@outlook.com",
     "Wynne.Schmidt@outlook.com",
@@ -72,14 +72,14 @@ foreach($iTab as $value) {
     print_r($value);
     echo '<br />';
 }
-echo '<br/>';
+echo '<br />';
 
 echo 'exo 2 & 3 <br />';
 foreach($aTab as $value) {
     print_r($value);
     echo '<br />';
 }
-echo '<br/>';
+echo '<br />';
 
 echo 'exo 4 <br />';
 $mn = "";
@@ -118,7 +118,7 @@ for($i = 0; $i < sizeof($dns); ++$i) {
 for ($i=0; $i < sizeof($stats); ++$i) { 
     echo "Le nom de domaine " .$dnsTable[$i] ." a été utilisé " .$stats[$i] ." fois." .'<br />';
 }
-echo '<br/>';
+echo '<br />';
 
 echo 'exo 5 <br />';
 $tabInt = array();
