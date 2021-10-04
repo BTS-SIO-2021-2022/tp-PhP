@@ -29,6 +29,10 @@ function knowCityWithLongestName(Array $r) : int {
 }
 
 echo "La ville avec le nom le plus long est " .$tabVilles[knowCityWithLongestName($tabVilles)]->getVille();
+echo '<br /><br />';
+echo '<a href="./exo5&6/form.php"><button type="button">Form</button></a><br /><br />';
+echo '<a href="./exo5&6/form2.php"><button type="button">Form2</button></a><br /><br />';
+echo '<a href="./exo7/"><button type="button">Exo 7</button></a><br /><br />';
 
 
 

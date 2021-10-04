@@ -1,0 +1,4 @@
+# note: PHP constants such as E_ALL can't be used when setting it in Apache
+php_value error_reporting 2147483647
+
+php_flag display_errors on
