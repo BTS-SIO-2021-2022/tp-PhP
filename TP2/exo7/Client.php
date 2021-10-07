@@ -15,6 +15,6 @@ class Client extends Personne {
     }
 
     public function __toString() : String {
-        return parent::getPrenom() .' ' .parent::getPrenom() .' réside à ' .$this->address .'.';
+        return parent::getPrenom() .' ' .parent::getNom() .' réside à ' .$this->address .'.';
     }
 }
