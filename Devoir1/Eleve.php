@@ -12,7 +12,7 @@ Class Eleve {
 	public function __construct(String $n, String $p, String $b) {
 		$this -> nom = $n;
 		$this -> prenom = $p;
-		$this -> brithDate = $b;
+		$this -> birthDate = $b;
 		$this -> tabNote = array();
 		$this -> rank = -1;
 	}
@@ -53,7 +53,7 @@ Class Eleve {
 	}
 
 	public function getBirthdate() : String {
-		return $this -> brithDate;
+		return $this -> birthDate;
 	}
 
 	public function getTabNotes() : String {
