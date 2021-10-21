@@ -1,0 +1,24 @@
+div.form {
+    margin: 20px 700px 20px 700px;
+    padding: 30px 30px 30px 30px;
+    border: 1px;
+    border-style: dotted;
+    border-color: blueviolet;
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+label {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+}

@@ -1,0 +1,26 @@
+div.form {
+    margin: 20px 800px 20px 800px;
+    padding: 30px 30px 30px 30px;
+    border: 1px;
+    border-style: dotted;
+    border-color: blueviolet;
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+label,
+datalist {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+input {
+    width: 100%;
+}

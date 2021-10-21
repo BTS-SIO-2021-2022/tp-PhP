@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style.css" rel="stylesheet" type="text/css" />
+
+    <title>TP3</title>
+</head>
+
+<body>
+    <div class="form">
+        <form action="./traitement.php" method="post" name="form">
+            <label for="name">Nom</label><strong style="color: red;">*</strong>
+            <input type="text" name="form[name]" id="name" /><br /><br />
+
+            <label for="forename">Prénom</label>
+            <strong style="color: red;">*</strong>
+            <input type="text" name="form[forename]" id="forename" /><br /><br />
+
+            <label for="address">Adresse</label><strong style="color: red;">*</strong>
+            <input type="text" name="form[address]" id="address" /><br /><br />
+
+            <label for="zip">Code Postal</label><strong style="color: red;">*</strong>
+            <input type="text" name="form[zip]" id="zip" /><br /><br />
+
+            <label for="city">Ville</label><strong style="color: red;">*</strong>
+            <input type="text" name="form[city]" id="city" /><br /><br />
+
+            <label for="city">Email</label><strong style="color: red;">*</strong>
+            <input type="text" name="form[mail]" id="mail" value="" /><br /><br />
+
+            <input type="submit" name="Envoyer" value="Envoyer" />
+        </form>
+    </div>
+    <br /><br /><a href="./exo4"><button type="button">exo4</button></a><br /><br />
+    <br /><br /><a href="./exo6"><button type="button">exo6</button></a><br /><br />
+
+</body>
+
+</html>
